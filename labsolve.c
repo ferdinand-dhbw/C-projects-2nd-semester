@@ -240,7 +240,7 @@ Path_p duplicatePath(Path_p p) {
 	p = p->next;
 
 	while (p) {
-		//copie one element
+		//copy one element
 		new = malloc(sizeof(Path));
 		setCoords(&new->point, p->point[0], p->point[1]);
 		new->next = NULL;
